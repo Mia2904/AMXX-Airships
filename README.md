@@ -24,70 +24,92 @@ The core (airships_core.amxx) will manage the physics. It does nothing by itself
 ### API
 * See airships.inc for information.
 
-### Cvar list (see airships_core.sma for default values)
-* Max speed an airship should be able to move forward 
-as_max_speed
+### Cvar list <default values>
+* Max speed an airship should be able to move forward
+
+  __as_max_speed__ 700.0
 
 * Max speed an airship should be able to move upwards
-as_max_up_speed
+
+  __as_max_up_speed__ 200.0
 
 * Max speed an airship should be able to fall
-as_max_fall_speed
+
+  __as_max_fall_speed__ 150.0
 
 * Acceleration value for moving forward / backwards
-as_acceleration
+
+  __as_acceleration__ 70.0
 
 * Deceleration speed when not pressing the gas buttons
-as_deceleration
+
+  __as_deceleration__ 30.0
 
 * Vertical acceleration (when pressing +DUCK / +USE)
-as_up_acceleration
+
+  __as_up_acceleration__ 15.0
 
 * Absolute gravity of airships
-as_gravity
+
+  __as_gravity__ 20.0
 
 * Minimum angle of roll required to start turning sidewards
-as_min_turning_angle
+
+  __as_min_turning_angle__ 0.0
 
 * Maximum angle an airship is permitted to roll if not in freemode
-as_max_rotating_angle
+
+  __as_max_rotating_angle__ 50.0
 
 * Maximum vertical angle (pitch) an airship is permitted to rotate (+DUCK / +USE)
-as_max_pitch_angle
+
+  __as_max_pitch_angle__ 50.0
 
 * Kind of an angular acceleration, for roll. Used when turning (IN_MOVELEFT / IN_MOVERIGHT)
-as_angle_roll_mul
+
+  __as_angle_roll_mul__ 15.0
 
 * Kind of an angular acceleration, for yaw. Used when turning (IN_MOVELEFT / IN_MOVERIGHT).
-* The final acceleration is calculated based on this value and the current roll angle.
-as_angle_yaw_mul
+
+  The final acceleration is calculated based on this value and the current roll angle.
+
+  __as_angle_yaw_mul__ 80.0
 
 * Kind of an angular acceleration, for pitch. Used when elevating/descending (+DUCK / +USE)
-as_angle_pitch_mul
+
+  __as_angle_pitch_mul__ 10.0
 
 * Maximum angular speed an airship can rotate (pitch, when +DUCK / +USE)
-as_max_pitch_speed
+
+  __as_max_pitch_speed__ 50.0
 
 * Maximum angular speed an airship can rotate (roll, when IN_MOVELEFT / IN_MOVERIGHT)
-as_max_roll_speed
+
+  __as_max_roll_speed__ 30.0
 
 * Time interval in seconds an airship is allowed to fire
-as_fire_interval
+
+  __as_fire_interval__ 0.4
 
 * Default damage a laser shoot inflicts to an airship. Can be overrided with the parameter fAttack in spawn native
-as_default_attack
+
+  __as_default_attack__ 100.0
 
 * Maximum damage a crash inflicts to an airship (a colision is considered a crash if speed is greater than half the max speed)
-as_crash_damage
+
+  __as_crash_damage__ 200.0
 
 * Time interval (in seconds) between crashes (to prevent the same crash to inflict damage more than once)
-as_crash_interval
+
+  __as_crash_interval__ 4.0
 
 * Default airship HP. Can be overrided with the parameter fHealth in the creation native
-as_default_hp
+
+  __as_default_hp__ 500.0
 
 * Distance (in game units) the camera should stay behind their airship. It may move a bit from that distance depending on the speed of the airship
-as_camera_min_distance
+
+  __as_camera_min_distance__ 400.0
 
 ### Support
 * AM-ES: https://amxmodx-es.com/member.php?action=profile&uid=402 (Send a PM).
