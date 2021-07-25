@@ -211,7 +211,7 @@ public plugin_init()
     g_cvar_fire_interval = register_cvar("as_fire_interval", "0.4");
     g_cvar_laser_damage = register_cvar("as_default_attack", "100.0");
     g_cvar_crash_damage = register_cvar("as_crash_damage", "200.0");
-    g_cvar_crash_interval = register_cvar("as_crash_interval", "5.0");
+    g_cvar_crash_interval = register_cvar("as_crash_interval", "4.0");
     g_cvar_default_hp = register_cvar("as_default_hp", "500.0");
     g_cvar_camera_distance = register_cvar("as_camera_min_distance", "400.0");
 
